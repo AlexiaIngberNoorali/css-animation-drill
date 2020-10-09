@@ -3,7 +3,6 @@
 .stage{
     height: 600px;
     width: 600px;
-    background-color: thistle;
     padding:20px;
 }
 
@@ -26,8 +25,7 @@
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
-    }
+       }
     /* Horizontal Translation from init position of 600% to the right */
     29.41% {
         transform: translateX(600%) translateY(0%) rotate(0deg);  /*By default the Translate property : left->right and top->bottom */
@@ -35,7 +33,6 @@
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
     }
     /* Maintain the previous state (here : horizontal translation to the right) because I want to move from that specific state. 
     New translation top to bottom of 200% */
@@ -45,7 +42,7 @@
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
+       
     }
     
     44.12% {
@@ -54,29 +51,28 @@
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
-    }
+       }
+
     55.88% {
         transform: translateX(300%) translateY(200%) rotate(45deg);
         border-color: red;
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
-        }
+    }
     
     70.59% {
         transform: translateX(0%) translateY(200%) rotate(90deg);
-        border-color: blue;
+        border: 1px dashed blue;
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background: thistle;
+        background: white;
     }
 
     100% {
         transform: translateX(240%) translateY(250%) rotate(90deg);
-        border-color: #f68a3c ;
+        border: 0px solid #f68a3c;
         border-radius: 50%;
         height: 160px;
         width: 160px;
