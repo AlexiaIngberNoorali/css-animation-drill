@@ -1,0 +1,82 @@
+.stage{
+    height: 600px;
+    width: 600px;
+    background-color: thistle;
+    padding:20px;
+}
+
+.hero {
+    display: inline-block;
+    border: 1px dashed red;
+    height: 80px;
+    width: 80px;
+    animation: myframe 17s ease-in-out;
+}
+
+
+@keyframes myframe {
+    0% {
+        transform: translateX(0%) translateY(0%) rotate(0deg);
+        border-color: red;
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+    }
+
+    29.41% {
+        transform: translateX(600%) translateY(0%) rotate(0deg); 
+        border-color: red;  
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+    }
+
+    41.18% {
+        transform: translateX(600%) translateY(200%) rotate(0deg);
+        border-color: red;
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+    }
+
+    44.12% {
+        transform: translateX(300%) translateY(200%) rotate(45deg);
+        border-color: red;
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+    }
+    55.88% {
+        transform: translateX(300%) translateY(200%) rotate(45deg);
+        border-color: red;
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+        }
+    
+    70.59% {
+        transform: translateX(0%) translateY(200%) rotate(90deg);
+        border-color: blue;
+        border-radius: 0%;
+        height: 80px;
+        width: 80px;
+        background-color: thistle;
+    }
+
+    100% {
+        transform: translateX(240%) translateY(250%) rotate(90deg);
+        border-color: sandybrown;
+        border-radius: 50%;
+        height: 160px;
+        width: 160px;
+        background-color: sandybrown;
+
+    }
+
+}
+ 
