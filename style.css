@@ -1,3 +1,5 @@
+
+
 .stage{
     height: 600px;
     width: 600px;
@@ -12,9 +14,12 @@
     width: 80px;
     animation: myframe 17s ease-in-out;
 }
-
+/* - Property Translate is related to inital position of the object
+   : going from 600% to 300% means going right to left of 300%
+   - Percentages in the keyframes are fractions of the total animation time, here 17sec. */
 
 @keyframes myframe {
+    /* Inital Position */
     0% {
         transform: translateX(0%) translateY(0%) rotate(0deg);
         border-color: red;
@@ -23,16 +28,17 @@
         width: 80px;
         background-color: thistle;
     }
-
+    /* Horizontal Translation from init position of 600% to the right */
     29.41% {
-        transform: translateX(600%) translateY(0%) rotate(0deg); 
+        transform: translateX(600%) translateY(0%) rotate(0deg);  /*By default the Translate property : left->right and top->bottom */
         border-color: red;  
         border-radius: 0%;
         height: 80px;
         width: 80px;
         background-color: thistle;
     }
-
+    /* Maintain the previous state (here : horizontal translation to the right) because I want to move from that specific state. 
+    New translation top to bottom of 200% */
     41.18% {
         transform: translateX(600%) translateY(200%) rotate(0deg);
         border-color: red;
@@ -41,7 +47,7 @@
         width: 80px;
         background-color: thistle;
     }
-
+    
     44.12% {
         transform: translateX(300%) translateY(200%) rotate(45deg);
         border-color: red;
@@ -65,16 +71,16 @@
         border-radius: 0%;
         height: 80px;
         width: 80px;
-        background-color: thistle;
+        background: thistle;
     }
 
     100% {
         transform: translateX(240%) translateY(250%) rotate(90deg);
-        border-color: sandybrown;
+        border-color: #f68a3c ;
         border-radius: 50%;
         height: 160px;
         width: 160px;
-        background-color: sandybrown;
+        background: radial-gradient(#f7f96b, #f68a3c); 
 
     }
 
